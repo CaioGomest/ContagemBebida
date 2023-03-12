@@ -35,13 +35,17 @@ removeButtons.forEach(function(removeButtons) {
 var enviarButton = document.querySelector('.enviar');
 
 enviarButton.addEventListener('click', function() {
-  for (const [bebida, qt] of Object.entries(bebidas)) {
-    contbebidas = `${bebida}: ${qt}`;
-    console.log(contbebidas)
+  var bebidas = document.querySelectorAll('.item');
+  var contbebidas = '';
 
-  }
+  bebidas.forEach(function(bebida) {
+    var nomeBebida = bebida.querySelector('li').textContent;
+    var qtBebida = bebida.querySelector('.quantidadeBebida').textContent;
+    contbebidas += nomeBebida + ': ' + qtBebida + '\n';
+  });
+
   var link = "https://wa.me/5511945894011?text=" + encodeURIComponent(contbebidas);
-window.open(link);
+  window.open(link);
 });
 
 
