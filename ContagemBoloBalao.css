@@ -1,0 +1,68 @@
+body{
+
+    background-color: rgb(253, 2, 207);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.main{
+
+
+    background-color: white;
+    border-radius: 15px;
+    height: 70%;
+    width: 90%;
+}
+.main ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.item{
+
+    display: flex;
+    height: 50px;
+    width: 95%;
+    
+
+}
+.main li{
+border: black 1px solid;
+border-radius: 5px;
+width: 70%;
+
+background-color: blueviolet;
+color: white;
+font-weight: bold;
+font-size: 30px;
+
+
+}
+.areaBotao{
+
+display: flex;
+width: 30%;
+justify-content: space-around;
+
+}
+.areaBotao button{
+
+    width: 30px;
+}
+.enviar{
+width: 90%;
+background-color: green;
+border-radius: 15px;
+color: white;
+margin: 10px;
+height: 50px;
+
+}
