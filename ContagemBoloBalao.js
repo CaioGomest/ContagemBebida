@@ -38,11 +38,13 @@ enviarButton.addEventListener('click', function() {
   for (const [bebida, qt] of Object.entries(bebidas)) {
     contbebidas = `${bebida}: ${qt}`;
     console.log(contbebidas)
+
   }
+  var link = "https://wa.me/5511945894011?text=" + encodeURIComponent(contbebidas);
+window.open(link);
 });
 
-var link = "https://wa.me/5511945894011?text=" + encodeURIComponent(contbebidas);
-window.open(link);
+
 
 
 
