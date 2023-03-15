@@ -92,9 +92,9 @@ enviarButton.addEventListener('click', function() {
     contbebidas += `${nomeBebida}: ${qtBebida}\n`;
   });
 
-  console.log(`${dataFesta}\n ${contbebidas}`);
-  console.log(contbebidas);
-  var link = "https://wa.me/5511945894011?text=" + encodeURIComponent(contbebidas);
+  var mensagem =`${dataFesta}\n ${contbebidas}`;
+
+  var link = "https://wa.me/5511945894011?text=" + encodeURIComponent(mensagem);
   window.open(link);
 });
 
