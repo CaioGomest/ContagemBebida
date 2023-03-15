@@ -1,20 +1,35 @@
 body{
 
-    background-color: rgb(253, 2, 207);
+    background-color:#de0051;
+    background-image: url("/img/Patterns-06.png");
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 100% ;
+    background-repeat: repeat;
+    background-position:50%;
   
 
 }
 .main{
 
-
     background-color: white;
     border-radius: 15px;
     height: 70%;
     width: 90%;
+}
+.dataFesta{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+@media only screen and (max-width:600px){
+.dataFesta{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+        
+    }
 }
 .main ul{
     list-style-type: none;
